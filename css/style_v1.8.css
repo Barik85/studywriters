@@ -84,13 +84,13 @@ h3 {
 #video3 a:hover {border: 1px dotted white;}
 #video3 img {position: fixed; z-index: 0; top: 350px; left: 50px;}	
 
-#video video {position: fixed; z-index: -1; top: 0;}
+#video video {position: fixed; z-index: -1; top: 0; width: 100%}
 #video h1 {position: fixed; z-index: 0; top: 200px; color: white; text-align: center; width: 100%;}
 #video h2 {text-align: center; color: white; margin-top: 280px;}
-#video a {position: fixed; z-index: 0; top: 320px; color: white; width: 10%; text-align: center; left: 45%; font-size: 200%; padding-top: 1%; padding-bottom: 1%; border: 1px solid white; text-decoration: none; }
+#video a {position: fixed; z-index: 0; top: 320px; color: white; width: 130px; text-align: center; left: 45%; font-size: 200%; padding-top: 1%; padding-bottom: 1%; border: 1px solid white; text-decoration: none; }
 #video a:hover {border: 1px dotted white;}
 #video img {position: fixed; z-index: 0; top: 350px; left: 50px;}
-#first {clear: both; float: left; width: 100%;  position: relative; z-index: 1; background-color: white; padding-bottom: 2%; text-align: center;}
+#first {clear: both; width: 100%;  position: relative; z-index: 1; background-color: white; text-align: center;}
 #first h2 {background-color: #3c8dbc; color: white;  text-align: center; padding: 2%; margin-top: 0px;}
 #first ul {list-style: none; width: 80%; margin-left: 7%; color: grey; background-color: white; padding-top: 2%;  }
 #first ul li {float: left; text-align: center; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; width: 20%;}
@@ -138,10 +138,14 @@ h3 {
 }
 .tabs > div{
     background-color: white; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; padding-left: 5%; padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 #ulclass{ 
-    margin:0px;
-    padding:0px; 
+    margin: 0px auto;
+    padding: 0px;
+    width: 95%; 
+    text-align: center;
 }
 #ulclass:after{
     content:"";
@@ -155,13 +159,12 @@ h3 {
           padding-top:2%;
           padding-bottom:2%;
           font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular;
-          cursor:pointer;
-          display:block;
-          float:left;
+          cursor: pointer;
+          display: inline-block;
           text-align: center;
           background: white;
           color: grey;
-          width: 20%;
+          width: 18%;
 }
 #liclass.active, #liclass.active:hover{
     background: white; 
@@ -174,12 +177,17 @@ h3 {
 }
 
 #table1 {text-align: justify; vertical-align: middle;}
-#table1td1 {padding-left: 3%; padding-right: 3%;  }
+#table1td {
+    width: 50%;
+}
 #table1 h2 {font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 150%; text-align: center; font-weight: regular;}
 #table1td {width: 30%; text-align: center;}
 #p1 {text-align: center;}
 #p1 td {border-top: 1px dashed red; border-right: 1px dashed red; padding-top: 5px;}
-#imgtbl {vertical-align: middle;}
+#imgtbl {
+    vertical-align: middle;
+    width: 100%;
+}
 #ull1 {clear: both; list-style: none; width: 100%; text-align: center;}
 #lii1 {padding-left: 3%; padding-right: 3%; text-align: justify; float: left; display: inline;}
 
@@ -207,6 +215,8 @@ h3 {
 
 .jcarousel {
     position: relative;
+    margin: 0px auto;
+    max-width: 900px;
     overflow: hidden;
     border-left: 0px dotted red;
     border-right: 0px dotted red;
@@ -242,8 +252,39 @@ have a fixed width and height (but it's not required).
 
 .jcarousel img {margin-top: 15%; margin-bottom: 15%;  }
 
-.jcarousel-control-prev {  color: grey; text-decoration: none; width: 10%; float: left; position: relative; z-index: 2; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; text-align: center; margin-top: 10%;}
-.jcarousel-control-next  { color: grey; text-decoration: none; width: 10%; float: right; position: relative; z-index: 2; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; text-align: center; margin-top: 10%; }
+.jcarousel-control-prev {  color: grey; 
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 25px;
+    top: 48%;
+    z-index: 3;
+    font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif;
+    font-size: 200%;
+    font-weight: regular;
+    text-align: center;
+}
+.jcarousel-control-next  { 
+    border-right: 1px solid grey;
+    border-top: 1px solid grey;
+    width: 20px;
+    height: 20px;
+    color: grey; 
+    right: 25px;
+    top: 48%;
+    transform: rotate(45deg);
+    text-decoration: none; 
+    position: absolute; 
+    z-index: 3; 
+    font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; 
+    font-size: 200%; 
+    font-weight: regular; 
+    text-align: center; 
+    }
 
 
 #sixth {clear: both; float: left; position: relative; width:100%; list-style: none; background-color: white; z-index: 4; color: grey; text-align: center; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; vertical-align: middle; padding-left: 10%; padding-right: 10%;}
@@ -276,7 +317,11 @@ and (max-device-width : 480px) {
     #third {margin-bottom: -2%;}
     #header ul li {float: left;  padding-top: 3%; padding-bottom: 3%; }
     #imgtbl {width: 100%;}
-    #video a {width: 12%; left: 44%;}
+    #video a {
+        left: 50%;
+        margin-left: -65px;
+        top: 345px
+    }
     #video1 a {width: 12%; left: 44%;}
     #video2 a {width: 12%; left: 44%;}
     #video3 a {width: 12%; left: 44%;}
@@ -284,13 +329,24 @@ and (max-device-width : 480px) {
     #p1 td {font-size: 70%;}
     #lii1 {font-size: 70%; margin: 0.5%; width: 18%;}
     #table1td1 {font-size: 70%;}
-    #video img {top: 270px; left: 20px; width: 220px;}
+    #video img {
+        top: 410px;
+        left: 9px;
+        width: 80px;}
     #headerimg {width: 18%; margin-bottom: -85px;}
     #sixth img {width: 75%;}
     #footer {font-size: 40%;}
-    .jcarousel-control-prev {margin-top: 18%;}
-    .jcarousel-control-next {margin-top: 18%;}
+    /* .jcarousel-control-prev {margin-top: 18%;}
+    .jcarousel-control-next {margin-top: 18%;} */
     #responsive {height: 120px;}
+    .jcarousel-control-prev {
+        top:33%;
+        left:8px;
+    }
+    .jcarousel-control-next {
+        top:33%;
+        right:8px;
+    }
 }
 
 #ninth {clear: both; float: left; width: 100%; position: relative; z-index: 4; color: white; background-color: grey; text-align: center; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; vertical-align: middle; background-image: url(../images/bar.png); background-repeat: cover;}
@@ -482,4 +538,50 @@ and (max-device-width : 480px) {
     margin: 20px auto;
     align-items: center;
     flex-wrap: wrap;
+}
+.offer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px;
+}
+.offer-wrapper p {
+    text-align: center;
+    font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif;
+    font-size: 200%;
+    color: grey;
+    margin: 1em 10px;
+}
+.tab-item {
+    display: flex;
+    justify-content: space-around;
+}
+.tab-item-image {
+    flex-basis: 40%;
+}
+.tab-item-description {
+    width: 50%;
+    padding: 0px 0px 0px 50px;
+}
+.tab-item-description h2 {
+    font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif;
+    font-size: 150%;
+    text-align: center;
+}
+.jcarousel-wrapper {
+    position: relative;
+}
+@media (max-width: 780px) {
+    #video video {
+        height: 100%;
+        width: auto;
+    }
+    .tab-item {
+        flex-direction: column;
+    }
+    .tab-item-description {
+        width: 85%;
+        margin-top: 20px;
+    }
 }
