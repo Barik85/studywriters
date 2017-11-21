@@ -1,0 +1,485 @@
+@charset "windows-1251";
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300italic,300,400italic,700,700italic,900italic,900);
+
+
+
+body {font-size: 62.5%; background-color: white; padding: 0; margin: 0; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-smooth: always; background-color: white; }
+
+a , input {outline: none;}
+h1 {font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-weight: normal; font-size: 300%;}
+h2 {font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-weight: normal; font-size: 200%;}
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+#header {float: left; background-color: grey; width: 100%; position: fixed; z-index: 5; }
+#header a {color: white; text-decoration: none;}
+#header a:hover {color: #c3e9ff; text-decoration: none;}
+#header ul {list-style: none; width: 90%; color: white;}
+#header ul li {float: left; padding-right: 0.5%; padding-left: 0.5%; padding-top: 2%; padding-bottom: 2%; position: relative; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 190%; font-weight: regular; }
+
+#header ul li img {margin-right: 5px; }
+.li1 {color: #CC0033;}
+.li1:hover {color:#c3e9ff;}
+#li2 {text-decoration: underline;}
+.headerimg {float: right; transition: all 0.4s ease; position: relative; width: 10%; margin-bottom: -55px; margin-top: 5px; z-index: 5;}
+.headerimg.sticky {float: right; transition: all 0.4s ease; position: relative; width: 5%; margin-bottom: -55px; margin-top: 15px; z-index: 5;}
+
+#icons {margin-left: 7%;}
+#icons2, #icons {font-size: 150%;} 
+
+#video {float: left; width: 100%; height: 600px; overflow: hidden; position: relative; z-index: 0; overflow-x: hidden;  }
+
+#video1 {float: left; width: 100%; height: 500px; overflow: hidden; position: relative; z-index: 2; overflow-x: hidden; background-image: url(../images/p4.jpg); background-position: center center; 
+         background-repeat: no-repeat;
+         -webkit-background-size: 100%;
+         -moz-background-size: 100%;
+         -o-background-size: 100%;
+         background-size: 100%;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;}
+
+#video1 h1 {position: fixed; z-index: 1; top: 200px; color: white; text-align: center; width: 100%;}
+#video1 h2 {text-align: center; color: white; margin-top: 280px;}
+#video1 a {position: fixed; z-index: 0; top: 320px; color: white; width: 10%; text-align: center; left: 45%; font-size: 200%; padding-top: 1%; padding-bottom: 1%; border: 1px solid white; text-decoration: none; }
+#video1 a:hover {border: 1px dotted white;}
+#video1 img {position: fixed; z-index: 0; top: 350px; left: 50px;}
+
+#video2 {float: left; width: 100%; height: 500px; overflow: hidden; position: relative; z-index: 2; overflow-x: hidden; background-image: url(../images/p1.jpg); background-position: center center; 
+         background-repeat: no-repeat;
+         -webkit-background-size: 100%;
+         -moz-background-size: 100%;
+         -o-background-size: 100%;
+         background-size: 100%;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;}
+
+#video2 h1 {position: fixed; z-index: 1; top: 200px; color: white; text-align: center; width: 100%;}
+#video2 h2 {text-align: center; color: white; margin-top: 280px;}
+#video2 a {position: fixed; z-index: 0; top: 320px; color: white; width: 10%; text-align: center; left: 45%; font-size: 200%; padding-top: 1%; padding-bottom: 1%; border: 1px solid white; text-decoration: none; }
+#video2 a:hover {border: 1px dotted white;}
+#video2 img {position: fixed; z-index: 0; top: 350px; left: 50px;}		
+
+#video3 {float: left; width: 100%; height: 500px; overflow: hidden; position: relative; z-index: 2; overflow-x: hidden; background-image: url(../images/p3.jpg); background-position: center center; 
+         background-repeat: no-repeat;
+         -webkit-background-size: 100%;
+         -moz-background-size: 100%;
+         -o-background-size: 100%;
+         background-size: 100%;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;}
+
+#video3 h1 {position: fixed; z-index: 1; top: 200px; color: white; text-align: center; width: 100%;}
+#video3 h2 {text-align: center; color: white; margin-top: 280px;}
+#video3 a {position: fixed; z-index: 0; top: 320px; color: white; width: 10%; text-align: center; left: 45%; font-size: 200%; padding-top: 1%; padding-bottom: 1%; border: 1px solid white; text-decoration: none; }
+#video3 a:hover {border: 1px dotted white;}
+#video3 img {position: fixed; z-index: 0; top: 350px; left: 50px;}	
+
+#video video {position: fixed; z-index: -1; top: 0;}
+#video h1 {position: fixed; z-index: 0; top: 200px; color: white; text-align: center; width: 100%;}
+#video h2 {text-align: center; color: white; margin-top: 280px;}
+#video a {position: fixed; z-index: 0; top: 320px; color: white; width: 10%; text-align: center; left: 45%; font-size: 200%; padding-top: 1%; padding-bottom: 1%; border: 1px solid white; text-decoration: none; }
+#video a:hover {border: 1px dotted white;}
+#video img {position: fixed; z-index: 0; top: 350px; left: 50px;}
+#first {clear: both; float: left; width: 100%;  position: relative; z-index: 1; background-color: white; padding-bottom: 2%; text-align: center;}
+#first h2 {background-color: #3c8dbc; color: white;  text-align: center; padding: 2%; margin-top: 0px;}
+#first ul {list-style: none; width: 80%; margin-left: 7%; color: grey; background-color: white; padding-top: 2%;  }
+#first ul li {float: left; text-align: center; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; width: 20%;}
+
+
+#firstabout {clear: both; float: left; width: 100%;  position: relative; z-index: 4; background-color: white; padding-bottom: 2%; text-align: center; }
+#firstabout h2 {background-color: #3c8dbc; color: white;  text-align: center; padding: 2%; margin-top: 0px;}
+#firstabout ul {clear: both; text-align: center; list-style: none; color: grey; background-color: #f8f8f8;   padding-left: 0px; padding-top: 20px; padding-bottom: 20px; }
+#firstabout ul li {float: left; text-align: center; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; width: 20%; background-color: #f8f8f8;}
+#firstabout p {clear: both; width: 80%; margin-left: 10%; }
+#tablebout {margin-left: 10%; margin-bottom: 30px; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; color: grey;}
+#pabout {font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; color: grey; padding-top: 30px; padding-bottom: 30px; text-align: left;}
+#paboutl {font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; color: grey; width: 30%; margin-left: 35%; text-align: left;}
+#pabout2 {font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; color: grey; width: 60%; margin-left: 20%; text-align: left;}
+.hmm {color: black; font-style: italic;}
+
+
+#second {clear: both; float: left; width: 100%; position: relative; z-index: 2; background-image: url(../images/p1.jpg); background-position: center center; 
+         background-repeat: no-repeat;
+         -webkit-background-size: 100%;
+         -moz-background-size: 100%;
+         -o-background-size: 100%;
+         background-size: 100%;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover; text-align: center; }
+#second h1 {clear: both; color: white; text-align: center; margin-bottom: 2%;}
+#second a {clear: both; font-size: 200%; border: 1px solid white; text-decoration: none; text-align: center; color: white; padding: 1%; }
+#second a:hover {border: 1px dotted white;}
+
+#scnd1 {clear: both; float: right; width: 20%; margin-bottom: -5%;}
+#scnd2 {clear: both; float: left; width: 15%; margin-top: -5%;}
+#scnd3 {clear: both; float: left; width: 20%; margin-top: -5%;}
+
+#scndab2 {clear: both; position: relative; z-index: 11; float: left; margin-top: -5%;}
+
+
+#third {clear: both; float: left; width: 100%;  position: relative; z-index: 1; background-color: white; margin-bottom: -1%; text-align: center;}
+#third h2 {background-color: #3c8dbc; color: white;  text-align: center; padding: 2%; margin-top: 0px;}
+
+
+.tabs{
+    display:inline-block; width:100%; position: relative; z-index: 2; padding-bottom: 2%; background-color: white; 
+}
+.tabs > div{
+    background-color: white; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; padding-left: 5%; padding-right: 5%;
+}
+#ulclass{ 
+    margin:0px;
+    padding:0px; 
+}
+#ulclass:after{
+    content:"";
+    display:block;
+    clear:both;
+    height:0px;
+    background:red;
+}
+#liclass{ transition: all 0.4s ease;
+          margin:0px;
+          padding-top:2%;
+          padding-bottom:2%;
+          font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular;
+          cursor:pointer;
+          display:block;
+          float:left;
+          text-align: center;
+          background: white;
+          color: grey;
+          width: 20%;
+}
+#liclass.active, #liclass.active:hover{
+    background: white; 
+    color: grey;
+    text-decoration: underline;
+}
+#liclass:hover{
+    background-color: #f8f8f8;
+    color: #3c8dbc;
+}
+
+#table1 {text-align: justify; vertical-align: middle;}
+#table1td1 {padding-left: 3%; padding-right: 3%;  }
+#table1 h2 {font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 150%; text-align: center; font-weight: regular;}
+#table1td {width: 30%; text-align: center;}
+#p1 {text-align: center;}
+#p1 td {border-top: 1px dashed red; border-right: 1px dashed red; padding-top: 5px;}
+#imgtbl {vertical-align: middle;}
+#ull1 {clear: both; list-style: none; width: 100%; text-align: center;}
+#lii1 {padding-left: 3%; padding-right: 3%; text-align: justify; float: left; display: inline;}
+
+#fifth {clear: both; float: left; width: 100%; position: relative; z-index: 4; background-image: url(../images/p2.jpg); background-position: center center; margin-top: -0.2%;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; text-align: center; }
+#fifth h1 {clear: both; color: white; text-align: center; margin-bottom: 2%;}
+#fifth a {clear: both; font-size: 200%; border: 1px solid white; text-decoration: none; text-align: center; color: white; padding: 1%; }
+#fifth a:hover {border: 1px dotted white;}
+
+
+.scb {font-weight: bold;}
+
+#fourth {clear: both; width: 100%;  position: relative; z-index:4; background-color: #f8f8f8; text-align: center; margin-bottom: -1%;}
+#fourth h2 {background-color: #3c8dbc; color: white;  text-align: center; padding: 2%; margin-top: 0px;}
+
+.wrapper {background-color: #f8f8f8; position: relative; z-index: 2;}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    border-left: 0px dotted red;
+    border-right: 0px dotted red;
+    width: 79%; z-index: 2; background-color: #f8f8f8; transition: all 0.4s ease; 
+
+
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative; transition: all 0.4s ease; 
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left; 
+}
+
+.jcarousel img {margin-top: 15%; margin-bottom: 15%;  }
+
+.jcarousel-control-prev {  color: grey; text-decoration: none; width: 10%; float: left; position: relative; z-index: 2; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; text-align: center; margin-top: 10%;}
+.jcarousel-control-next  { color: grey; text-decoration: none; width: 10%; float: right; position: relative; z-index: 2; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; text-align: center; margin-top: 10%; }
+
+
+#sixth {clear: both; float: left; position: relative; width:100%; list-style: none; background-color: white; z-index: 4; color: grey; text-align: center; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; vertical-align: middle; padding-left: 10%; padding-right: 10%;}
+#sixthtd {width: 15%; padding: 2%;}
+
+#seventh {clear: both; float: left; width: 100%; position: relative; z-index: 4; background-image: url(../images/p4.jpg); background-position: center center; 
+          background-repeat: no-repeat;
+          -webkit-background-size: 100%;
+          -moz-background-size: 100%;
+          -o-background-size: 100%;
+          background-size: 100%;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover; text-align: center; }
+#seventh h1 {clear: both; color: white; text-align: center; margin-bottom: 2%;}
+#seventh a {clear: both; font-size: 200%; border: 1px solid white; text-decoration: none; text-align: center; color: white; padding: 1%; }
+#seventh a:hover {border: 1px dotted white;}
+#seventh p {float: left; color: white; clear: both; line-height: 50px; text-align: center; margin-left: 10px;}
+
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    #header ul li {float: left; padding: 5px; position: relative; font-size: 150%; }
+    #icons {margin-left: 2%;}
+    #icons2, #icons {font-size: 150%;}
+    #video {height: 500px;}
+    #third {margin-bottom: -2%;}
+    #header ul li {float: left;  padding-top: 3%; padding-bottom: 3%; }
+    #imgtbl {width: 100%;}
+    #video a {width: 12%; left: 44%;}
+    #video1 a {width: 12%; left: 44%;}
+    #video2 a {width: 12%; left: 44%;}
+    #video3 a {width: 12%; left: 44%;}
+
+    #p1 td {font-size: 70%;}
+    #lii1 {font-size: 70%; margin: 0.5%; width: 18%;}
+    #table1td1 {font-size: 70%;}
+    #video img {top: 270px; left: 20px; width: 220px;}
+    #headerimg {width: 18%; margin-bottom: -85px;}
+    #sixth img {width: 75%;}
+    #footer {font-size: 40%;}
+    .jcarousel-control-prev {margin-top: 18%;}
+    .jcarousel-control-next {margin-top: 18%;}
+    #responsive {height: 120px;}
+}
+
+#ninth {clear: both; float: left; width: 100%; position: relative; z-index: 4; color: white; background-color: grey; text-align: center; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; vertical-align: middle; background-image: url(../images/bar.png); background-repeat: cover;}
+#ninth p {padding: 5% 10% 5% 10%; }
+
+#footer { background-color: black; position: relative; z-index:2; color: white; vertical-align: middle; text-align: center; width: 80%; margin-left: 10%;}
+#footer table {vertical-align: middle;}
+#kolof {width: 100%; background-color: black; position: relative; z-index:1;}
+#footer p {font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular;}
+
+.cons {text-align: right;}
+.cons1 {text-align: left; padding: 2px 2px 2px 40px; border: none;}
+.err-text{color:red;}
+.acc-text{color:green;}
+.txt1 {border: none; font-size: 16px; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-weight: regular; color: grey; width: 300px;}
+.txt2 {border: none; padding: 2px 0px 2px 2px; width: 300px;}
+.txt3 {padding: 5px; color: white; background-color: #3c8dbc; border: none; margin-top: 20px; font-size: 100%; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif;}
+.txt4 {padding: 5px; color: white; background-color: grey; border: none; margin-top: 20px; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 100%; }
+.txt5 {border-top: 0px; border-left: 0px; border-right: 0px; border-bottom: 1px solid #c3e9ff; font-size: 100%; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-weight: regular; color: grey; background-color: #f8f8f8; width: 300px;}
+
+#table1111 {font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 17px; font-weight: regular; line-height: 40px; }
+/*#table1111 td {width: 50%;}*/
+.current {border-bottom: 1px dashed white;}
+#crr {padding-left: 10%; padding-right: 10%; padding-top: 20px; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; color: grey; background-color: #f8f8f8;}
+/* The Modal (background) */
+.modal {
+    display: none;  
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: relative;
+    box-shadow: 0px 0px 5px #333;
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    opacity: 0.9;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    font-size: 15px;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.modal-content p.text1{
+    color: #3C8DBC;
+    font-size: 25px;
+    font-family: "Roboto",sans-serif;
+}
+.modal-content p.text2{
+    color: #3C8DBC;
+    font-size: 20px;
+    font-family: "Roboto",sans-serif;
+    line-height: 28px;
+}
+
+.close {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    background-color: rgba(61, 61, 61, 0.8);
+    -webkit-box-shadow: 0px 0px 5px #000;
+    -moz-box-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 5px #000;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 20px;
+    -webkit-transition: all ease .8s;
+    -moz-transition: all ease .8s;
+    -ms-transition: all ease .8s;
+    -o-transition: all ease .8s;
+    transition: all ease .8s;
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+.close:hover {
+    cursor: pointer;
+    box-shadow: none;
+    opacity: 1;
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content:  '\d7';
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 14px;
+}
+.lader_img{display: none;}
+
+#video8 {float: left; width: 100%; height: 500px; overflow: hidden; position: relative; z-index: 2; overflow-x: hidden; background-image: url(../images/p80.jpg); background-position: center center; 
+         background-repeat: no-repeat;
+         -webkit-background-size: 100%;
+         -moz-background-size: 100%;
+         -o-background-size: 100%;
+         background-size: 100%;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;}
+
+#video8 h1 {position: fixed; z-index: 1; top: 200px; color: white; text-align: center; width: 100%;}
+#video8 h2 {text-align: center; color: white; margin-top: 280px;}
+#video8 a {position: fixed; z-index: 0; top: 320px; color: white; width: 10%; text-align: center; left: 45%; font-size: 200%; padding-top: 1%; padding-bottom: 1%; border: 1px solid white; text-decoration: none; }
+#video8 a:hover {border: 1px dotted white;}
+#video8 img {position: fixed; z-index: 0; top: 350px; left: 50px;}	
+.err_regmail{font-size: 12px; color: red;}
+.view_err_email{display: none;}
+#wrap {
+    display: none;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    overflow: auto;
+    padding: 16px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+.blk_reg{clear: both;margin: 0 auto;}
+.err_code_img{color: red;font-size: 12px; left: 43px; position: absolute; top: 43px;}
+.work-mechanism {
+    position: relative;
+    z-index: 4;
+    background-color: #ffffff;
+    padding: 20px 0px;
+}
+.work-mechanism-wrapper {
+    display: flex;
+    max-width: 1040px;
+    width: 90%;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.mechanism-item {
+    display: flex;
+    align-items: center;
+}
+.mechanism-item__title {
+    font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif;
+    font-size: 200%;
+    width: 137px;
+    text-align: center;
+    color: grey;
+}
+.footer { 
+    background-color: black; 
+    position: relative; 
+    z-index:2; 
+    color: white; 
+    vertical-align: middle; 
+    text-align: center; 
+    padding: 20px 0px;
+}
+.footer p {
+    font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; 
+    font-size: 200%; 
+    font-weight: regular;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
