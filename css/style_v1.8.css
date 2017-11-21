@@ -87,7 +87,10 @@ h3 {
 #video video {position: fixed; z-index: -1; top: 0; width: 100%}
 #video h1 {position: fixed; z-index: 0; top: 200px; color: white; text-align: center; width: 100%;}
 #video h2 {text-align: center; color: white; margin-top: 280px;}
-#video a {position: fixed; z-index: 0; top: 320px; color: white; width: 130px; text-align: center; left: 45%; font-size: 200%; padding-top: 1%; padding-bottom: 1%; border: 1px solid white; text-decoration: none; }
+#video a {position: fixed; z-index: 0; top: 320px; color: white; width: 130px; text-align: center; 
+    left: 50%;
+    margin-left:-65px;
+    font-size: 200%; padding-top: 1%; padding-bottom: 1%; border: 1px solid white; text-decoration: none; }
 #video a:hover {border: 1px dotted white;}
 #video img {position: fixed; z-index: 0; top: 350px; left: 50px;}
 #first {clear: both; width: 100%;  position: relative; z-index: 1; background-color: white; text-align: center;}
@@ -307,49 +310,9 @@ have a fixed width and height (but it's not required).
 
 
 
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-    #header ul li {float: left; padding: 5px; position: relative; font-size: 150%; }
-    #icons {margin-left: 2%;}
-    #icons2, #icons {font-size: 150%;}
-    #video {height: 500px;}
-    #third {margin-bottom: -2%;}
-    #header ul li {float: left;  padding-top: 3%; padding-bottom: 3%; }
-    #imgtbl {width: 100%;}
-    #video a {
-        left: 50%;
-        margin-left: -65px;
-        top: 345px
-    }
-    #video1 a {width: 12%; left: 44%;}
-    #video2 a {width: 12%; left: 44%;}
-    #video3 a {width: 12%; left: 44%;}
 
-    #p1 td {font-size: 70%;}
-    #lii1 {font-size: 70%; margin: 0.5%; width: 18%;}
-    #table1td1 {font-size: 70%;}
-    #video img {
-        top: 410px;
-        left: 9px;
-        width: 80px;}
-    #headerimg {width: 18%; margin-bottom: -85px;}
-    #sixth img {width: 75%;}
-    #footer {font-size: 40%;}
-    /* .jcarousel-control-prev {margin-top: 18%;}
-    .jcarousel-control-next {margin-top: 18%;} */
-    #responsive {height: 120px;}
-    .jcarousel-control-prev {
-        top:33%;
-        left:8px;
-    }
-    .jcarousel-control-next {
-        top:33%;
-        right:8px;
-    }
-}
 
-#ninth {clear: both; float: left; width: 100%; position: relative; z-index: 4; color: white; background-color: grey; text-align: center; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; vertical-align: middle; background-image: url(../images/bar.png); background-repeat: cover;}
+#ninth {clear: both; width: 100%; position: relative; z-index: 4; color: white; background-color: grey; text-align: center; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 200%; font-weight: regular; vertical-align: middle; background-image: url(../images/bar.png); background-repeat: cover;}
 #ninth p {padding: 5% 10% 5% 10%; }
 
 #footer { background-color: black; position: relative; z-index:2; color: white; vertical-align: middle; text-align: center; width: 80%; margin-left: 10%;}
@@ -572,6 +535,14 @@ and (max-device-width : 480px) {
 .jcarousel-wrapper {
     position: relative;
 }
+@media (max-width:920px){
+    #liclass {
+        display: block;
+        background-color:#EEEEEE;
+        width: 90%;
+        margin: 2px auto;
+    }
+}
 @media (max-width: 780px) {
     #video video {
         height: 100%;
@@ -583,5 +554,54 @@ and (max-device-width : 480px) {
     .tab-item-description {
         width: 85%;
         margin-top: 20px;
+    }
+    #video img {
+        top: 448px;
+        left: 17px;
+        width: 140px;
+    }
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    #header ul li {float: left; padding: 5px; position: relative; font-size: 150%; }
+    #icons {margin-left: 2%;}
+    #icons2, #icons {font-size: 150%;}
+    #video {height: 500px;}
+    #third {margin-bottom: -2%;}
+    #header ul li {float: left;  padding-top: 3%; padding-bottom: 3%; }
+    #imgtbl {width: 100%;}
+    #video a {
+        left: 50%;
+        margin-left: -65px;
+        top: 345px
+    }
+    #video1 a {width: 12%; left: 44%;}
+    #video2 a {width: 12%; left: 44%;}
+    #video3 a {width: 12%; left: 44%;}
+
+    #p1 td {font-size: 70%;}
+    #lii1 {font-size: 70%; margin: 0.5%; width: 18%;}
+    #table1td1 {font-size: 70%;}
+    #video img {
+        top: 410px;
+        left: 9px;
+        width: 80px;}
+    #headerimg {width: 18%; margin-bottom: -85px;}
+    #sixth img {width: 75%;}
+    #footer {font-size: 40%;}
+    /* .jcarousel-control-prev {margin-top: 18%;}
+    .jcarousel-control-next {margin-top: 18%;} */
+    #responsive {height: 120px;}
+    .jcarousel-control-prev {
+        top:33%;
+        left:8px;
+    }
+    .jcarousel-control-next {
+        top:33%;
+        right:8px;
+    }
+    .footer-wrapper div {
+        width: 50%;
     }
 }
