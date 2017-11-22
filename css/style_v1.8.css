@@ -580,6 +580,15 @@ have a fixed width and height (but it's not required).
 @media (max-width: 740px) {
     #header ul {
         display: none;
+        position: absolute;
+        top: 55px;
+        width: 100%;
+        margin: 0px;
+        background-color: grey;
+    }
+    #header ul li {
+        display: block;
+        text-align: center;
     }
     .burger {
         opacity:1;
@@ -656,4 +665,10 @@ and (max-device-width : 480px) {
     .footer-wrapper div {
         width: 50%;
     }
+}
+#menu-switcher {
+    display: none;
+}
+#menu-switcher:checked~ul{
+ display: block;
 }
