@@ -542,7 +542,7 @@ have a fixed width and height (but it's not required).
     position: relative;
 }
 .burger{
-    display: none;
+    opacity: 0;
     width: 32px;
     height: 34px;
     position: absolute;
@@ -582,7 +582,7 @@ have a fixed width and height (but it's not required).
         display: none;
     }
     .burger {
-        display: block;
+        opacity:1;
     }
     #header {
         height: 74px;
