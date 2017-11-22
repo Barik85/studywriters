@@ -18,15 +18,20 @@ h3 {
 #header {float: left; background-color: grey; width: 100%; position: fixed; z-index: 5; }
 #header a {color: white; text-decoration: none;}
 #header a:hover {color: #c3e9ff; text-decoration: none;}
-#header ul {list-style: none; width: 90%; color: white;}
-#header ul li {float: left; padding-right: 0.5%; padding-left: 0.5%; padding-top: 2%; padding-bottom: 2%; position: relative; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 190%; font-weight: regular; }
+#header ul {
+    list-style: none; 
+    width: 90%; 
+    color: white;
+    margin: 2px 0px 10px 20px;
+}
+#header ul li {display: inline-block; padding-right: 0.5%; padding-left: 0.5%; padding-top: 2%; padding-bottom: 2%; position: relative; font-family: 'Raleway', 'Lato', 'Open Sans', sans-serif; font-size: 190%; font-weight: regular; }
 
 #header ul li img {margin-right: 5px; }
 .li1 {color: #CC0033;}
 .li1:hover {color:#c3e9ff;}
 #li2 {text-decoration: underline;}
-.headerimg {float: right; transition: all 0.4s ease; position: relative; width: 10%; margin-bottom: -55px; margin-top: 5px; z-index: 5;}
-.headerimg.sticky {float: right; transition: all 0.4s ease; position: relative; width: 5%; margin-bottom: -55px; margin-top: 15px; z-index: 5;}
+.headerimg {float: right; transition: all 0.4s ease; position: relative; width: 10%; margin-bottom: -55px; margin-top: 15px; z-index: 5;}
+.headerimg.sticky {float: right; transition: all 0.4s ease; position: relative; width: 74px; margin-bottom: -55px; margin-top: 15px; z-index: 5;}
 
 #icons {margin-left: 7%;}
 #icons2, #icons {font-size: 150%;} 
@@ -84,7 +89,7 @@ h3 {
 #video3 a:hover {border: 1px dotted white;}
 #video3 img {position: fixed; z-index: 0; top: 350px; left: 50px;}	
 
-#video video {position: fixed; z-index: -1; top: 0; width: 100%}
+#video video {position: fixed; z-index: -1; top: 73px; width: 100%}
 #video h1 {position: fixed; z-index: 0; top: 200px; color: white; text-align: center; width: 100%;}
 #video h2 {text-align: center; color: white; margin-top: 280px;}
 #video a {position: fixed; z-index: 0; top: 320px; color: white; width: 130px; text-align: center; 
@@ -132,8 +137,9 @@ h3 {
 #scndab2 {clear: both; position: relative; z-index: 11; float: left; margin-top: -5%;}
 
 
-#third {clear: both; float: left; width: 100%;  position: relative; z-index: 1; background-color: white; margin-bottom: -1%; text-align: center;}
-#third h2 {background-color: #3c8dbc; color: white;  text-align: center; padding: 2%; margin-top: 0px;}
+#third {clear: both; float: left; width: 100%;  position: relative; z-index: 3; background-color: white; margin-bottom: -1%; text-align: center;}
+#third h2 {background-color: #3c8dbc; color: white;  text-align: center; padding: 2%; 
+    margin: 0px 0px 20px 0px;}
 
 
 .tabs{
@@ -192,7 +198,7 @@ h3 {
     width: 100%;
 }
 #ull1 {clear: both; list-style: none; width: 100%; text-align: center;}
-#lii1 {padding-left: 3%; padding-right: 3%; text-align: justify; float: left; display: inline;}
+#lii1 {padding-left: 3%; padding-right: 3%; text-align: justify; display: inline-block;}
 
 #fifth {clear: both; float: left; width: 100%; position: relative; z-index: 4; background-image: url(../images/p2.jpg); background-position: center center; margin-top: -0.2%;
         background-repeat: no-repeat;
@@ -535,25 +541,35 @@ have a fixed width and height (but it's not required).
 .jcarousel-wrapper {
     position: relative;
 }
-@media (max-width:920px){
+.burger{
+    display: none;
+    width: 32px;
+    height: 34px;
+    position: absolute;
+    left: 17px;
+    top: 18px;
+}
+
+@media (max-width:953px){
     #liclass {
         display: block;
         background-color:#EEEEEE;
         width: 90%;
         margin: 2px auto;
     }
-}
-@media (max-width: 780px) {
     #video video {
         height: 100%;
         width: auto;
     }
+}
+@media (max-width: 780px) {
     .tab-item {
         flex-direction: column;
     }
     .tab-item-description {
-        width: 85%;
+        width: 95%;
         margin-top: 20px;
+        padding: 0px 0px 0px 12px;
     }
     #video img {
         top: 448px;
@@ -561,10 +577,46 @@ have a fixed width and height (but it's not required).
         width: 140px;
     }
 }
+@media (max-width: 740px) {
+    #header ul {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    #header {
+        height: 74px;
+    }
+    .headerimg {
+        width: 74px;
+        margin-top: 7px;
+    }
+    .headerimg.sticky {
+        margin-top: 7px;        
+    }
+    .footer-wrapper div {
+        width: 50%;
+    }
+}
+@media (max-width:570px) {
+    .offer-wrapper{
+        flex-direction: column;
+    }
+    .mechanism-item {
+        margin: 12px 0px;
+        justify-content: space-around;
+        width: 75%;
+    }
+}
+@media (max-width:525px){
+    .mechanism-item__img img {
+        width: 71px;
+    }
+}
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
-    #header ul li {float: left; padding: 5px; position: relative; font-size: 150%; }
+    #header ul li {padding: 5px; position: relative; font-size: 150%; }
     #icons {margin-left: 2%;}
     #icons2, #icons {font-size: 150%;}
     #video {height: 500px;}
