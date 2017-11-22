@@ -630,7 +630,7 @@ and (max-device-width : 480px) {
     #icons2, #icons {font-size: 150%;}
     #video {height: 500px;}
     #third {margin-bottom: -2%;}
-    #header ul li {float: left;  padding-top: 3%; padding-bottom: 3%; }
+    #header ul li {padding-top: 3%; padding-bottom: 3%; }
     #imgtbl {width: 100%;}
     #video a {
         left: 50%;
